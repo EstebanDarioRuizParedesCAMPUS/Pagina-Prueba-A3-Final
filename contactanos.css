@@ -1,0 +1,106 @@
+body{
+margin:0%;
+background-color: #22a0b6;
+}
+
+form{
+width: 60%;
+margin: auto;
+background: #ef5d9b;
+padding: 10px 20px;
+box-sizing: border-box;
+margin-top: 20px;
+border-radius: 7px;
+z-index:2;
+position: relative;
+
+
+}
+
+h2{
+color: #301150;
+text-align: center;
+margin:0;
+font-size: 30px;
+margin-bottom: 10px;
+}
+
+input, textarea, button{
+width: 100%;
+margin-bottom: 20px;
+padding: 7px;
+box-sizing: border-box;
+font-size: 17px;
+border: none;
+background-color: #fbace9;
+}
+
+textarea{
+ min-height: 100px;
+ max-height: 200px;
+ max-width: 100%;
+}
+
+button{   background: #cb0c59;
+    color: #301150;
+    padding: 20px;
+}
+.btn-primary{
+    background-color: #cb0c59 ;
+    border-style: none;
+}
+
+button:hover{
+cursor: pointer;
+}
+
+.hero{
+    margin-top: 10%;
+min-height: 100vh;
+position:relative;
+}
+
+
+video {
+position: absolute;
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+
+nav, .offcanvas {
+    background-color: #071e26;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.card{
+    margin: 20px;
+}
+
+.search-nft{
+    margin-top: 2%;
+}
+
+.new-bg-color{
+    background-color: #071e26 !important;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}
+.filtros{
+    position: fixed;
+}
+
+hr{
+    color: #ef5d9b !important;
+    opacity: 1 !important;
+}

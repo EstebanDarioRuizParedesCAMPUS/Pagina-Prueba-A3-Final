@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.cuerpo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    width: 100%;
+    background: #22a0b6;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 350px !important;
+    margin: 20px;
+    background-color: #eb649f !important;
+}
+
+.card .face {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card .front {
+    position: absolute;
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card .front img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3 {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0,0,0,.4);
+    text-align: center;
+}
+
+.card .back {
+    transform: perspective(600px) rotateY(180deg);
+    background-color: #7b1346;
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.card .back .link {
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.card .back .link a {
+    color: #f3f3f3;
+}
+
+.card .back h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p {
+    letter-spacing: 1px;
+} 
+
+.card:hover .front {
+    transform: perspective(600px) rotateY(180deg);
+}
+
+.card:hover .back {
+    transform: perspective(600px) rotateY(360deg);
+}
+
+nav, .offcanvas {
+    background-color: #1e293b;
+}
+.navbar-toggler {
+    border: none;
+}
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.main-nft-section{
+    display: flex;
+   width: 80%;
+   height: 450px;
+}
+
+.most-popular{
+    height: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./multimedia/fondo-main.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container-fluid.tetx-white.p-3.new-bg-color{
+    background-color: #071e26 !important;
+}
+.btn-primary{
+    background-color: #cb0c59 !important;
+    border-color: #cb0c59 !important;
+}
+.main-nft{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: .8;
+    transition: .5s ease;
+}
+
+.main-nft-section .main-nft:hover{
+    cursor: crosshair;
+    width: 300px;
+    opacity: 1;
+    filter: contrast(120%);
+}
+.new-bg-color{
+    background-color: gray;
+}
+
+.button-mg{
+    margin: 0px 5px 0px 5px;
+}
+.margin-bt{
+    margin-right: 30px;
+}
+
+h2{
+    margin-top: 25px !important;
+    font-weight: bold !important;
+    font-size: 40px !important;
+    color: aliceblue;
+}
+
+.tittle-design{
+    margin: 20px;
+    font-weight: bolder;
+    font-size: 50px;
+    color: #CB0C59;
+    -webkit-text-stroke: 3px #7B1346;
+    text-shadow: 3px 3px 3px #000;
+}
+
+.wrap{
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.no-wrap{
+    flex-wrap: nowrap;
+}
+
+hr{
+    color: #ef5d9b !important;
+    opacity: 1 !important;
+}
+
+
+@media (max-width: 550px) {
+    .no-wrap{
+        flex-wrap: wrap;
+    }
+}
